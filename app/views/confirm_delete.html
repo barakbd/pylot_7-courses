@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+</head>
+
+<body>
+  <div class='confirmation'>
+    <h1> Are you sure you want to delete the following course></h1>
+    <p>
+        Name: {{ one_course[0].name }}
+    </p>
+    <p>
+        Description: {{ one_course[0].description }}
+    </p>
+    <a href='/'><button>No</button></a>
+    <a href='/delete_course_confirm/{{ id }}'><button>Yes, I want to delete </button></a>
+  </div>
+
+</body>
+
+</html>
